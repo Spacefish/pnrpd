@@ -21,14 +21,16 @@
 #define REVOKE_CPA 0x009D
 #define IPV6_ENDPOINT_ARRAY 0x009E
 
+#define PNRP_UDP_PORT 3540
+
 // Messages
 struct message_header {
-	unsigned short field_id,
-	unsigned short length
+	unsigned short field_id;
+	unsigned short length;
 };
 
 struct advertise_message {
-	unsigned int acked_message_id,
-	unsigned short num_entries
+	unsigned int acked_message_id;
+	unsigned short num_entries;
 	// TODO
-}
+};
